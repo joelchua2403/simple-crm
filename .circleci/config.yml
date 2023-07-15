@@ -35,6 +35,10 @@ jobs:
       - docker/push:
           image: joelchua2403/simple-crm
           tag: 0.1.0
+      - run:
+          mvn clean package
+      - run:
+          mvn clean compile jib:build -Dimage=joelchua2403/simple-crm:0.1.0
   deploy:
     # This is an example deploy job, not actually used by the workflow
     docker:
