@@ -1,4 +1,7 @@
 version: 2.1
+orbs:
+  docker: circleci/docker@1.1.8
+  java: circleci/openjdk@0.2.3
 jobs:
   test-java:
     docker:
