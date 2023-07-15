@@ -1,7 +1,6 @@
 version: 2.1
 orbs:
   docker: circleci/docker@2.1.4
-  mvn-java-orb: rdoddi-pro/mvn-java-orb@0.5.1
 jobs:
   test-java:
     docker:
