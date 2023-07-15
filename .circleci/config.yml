@@ -30,9 +30,11 @@ jobs:
       - docker/check
       - docker/build:
           image: joelchua2403/simple-crm
+          dockerfile: Dockerfile
           tag: 0.1.0
       - docker/push:
           image: joelchua2403/simple-crm
+          dockerfile: Dockerfile
           tag: 0.1.0
   deploy:
     # This is an example deploy job, not actually used by the workflow
